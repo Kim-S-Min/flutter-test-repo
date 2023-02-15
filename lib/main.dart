@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:new_flutter_project/home.dart';
-import 'imageWidget.dart';
+// import 'package:new_flutter_project/home.dart';
+import 'package:new_flutter_project/http.dart';
+// import 'imageWidget.dart';
 
 void main() => runApp(ImageConponentTest());
 
@@ -15,7 +16,7 @@ class ImageConponentTest extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.grey,
       ),
-      home: const HomeScreen(),
+      home: const HttpTest(),
     );
   }
 }
