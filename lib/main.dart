@@ -1,9 +1,65 @@
 import 'package:flutter/material.dart';
+import 'package:new_flutter_project/home.dart';
+import 'imageWidget.dart';
 
-void main() => runApp(ScaffoldTest());
+void main() => runApp(ImageConponentTest());
 
 // =====================================================================
 
+// Scaffold Material 디자인 확인을 위한 테스트
+class ImageConponentTest extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Scaffold Test',
+      theme: ThemeData(
+        primarySwatch: Colors.grey,
+      ),
+      home: const HomeScreen(),
+    );
+  }
+}
+
+class _ImageConponentTest extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return BodyImageComponentTest();
+  }
+}
+
+class BodyImageComponentTest extends State<MaterialFlutterTest> {
+  String title = '한심';
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(title: Text('$title')),
+        floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.add),
+          onPressed: (() {
+            print(title);
+          }),
+        ),
+        body: Container(
+          // body에서 가로 가운데 정렬을 하는 기능
+            child: Center(
+                child: Column(
+                  children: [
+                    Icon(Icons.android),
+                    Text('$title')
+                  ],
+                  // body에서 세로 가운데 정렬을 하는 기능
+                  mainAxisAlignment: MainAxisAlignment.center,
+                )
+            )
+        )
+    );
+  }
+}
+
+// =====================================================================
+
+// Scaffold Material 디자인 확인을 위한 테스트
 class ScaffoldTest extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -34,9 +90,22 @@ class _MaterialFlutterTest extends State<MaterialFlutterTest> {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: (() {
-
+          print(title);
         }),
       ),
+      body: Container(
+        // body에서 가로 가운데 정렬을 하는 기능
+        child: Center(
+            child: Column(
+              children: <Widget>[
+                Icon(Icons.android),
+                Text('$title')
+              ],
+              // body에서 세로 가운데 정렬을 하는 기능
+              mainAxisAlignment: MainAxisAlignment.center,
+            )
+        )
+      )
     );
   }
 }
