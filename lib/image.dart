@@ -17,7 +17,7 @@ class ImageComponent extends StatelessWidget {
                     // filHeight height를 꽉 채워서 그린다(이미지가 잘린다)
                     // none 원본 이미지를 표시한다.(이미지가 잘린다)(영역을 무시하고 무조건 원본 이미지)
                     // scaleDown 전체 이미지가 나올 수 있게 이미지 크기를 조절해서 표시한다.
-                    Image.asset('images/unm.png', width: 400, height: 800, fit: BoxFit.fill,),
+                    Image.asset('images/unm.png', width: 300, height: 300, fit: BoxFit.fill,),
                   ],
                 )
             );

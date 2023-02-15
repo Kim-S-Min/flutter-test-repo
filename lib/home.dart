@@ -12,7 +12,10 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('h'),
+              Text(
+                  'I want leave work',
+                style: TextStyle(fontFamily: 'Tourney', fontSize: 40, color: Colors.red),
+              ),
               ImageComponent()
             ],
           ),

@@ -24,3 +24,8 @@ flutter:
   uses-material-design: true
   assets:
     - images/unm.png
+  fonts:
+    - family: Tourney
+      fonts:
+        - asset: font/Tourney.ttf
+          weight: 400
