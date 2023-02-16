@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
+import 'package:new_flutter_project/model/http_test.dart';
+
 class HttpTest extends StatefulWidget {
   const HttpTest({Key? key}) : super(key: key);
 
@@ -52,12 +54,7 @@ class _HttpTest extends State<HttpTest> {
   Future<String> getJSONData() async {
     var url =
         'https://492c69c6-661c-47f9-9c96-31bbe0c20109.mock.pstmn.io/test/sst/api';
-    var response = await http.get(Uri.parse(url));
-    setState(() {
-      var dataConvertedToJSON = json.decode(response.body);
-      List result = dataConvertedToJSON['documents'];
-      data!.addAll(result);
-    });
+    var response = await Http.get(Uri.parse(url));
     return response.body;
   }
 }
