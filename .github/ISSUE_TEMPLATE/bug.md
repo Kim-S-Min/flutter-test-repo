@@ -1,5 +1,5 @@
 ---
-name: Bug report
+name: Bug
 about: '버그에 대한 상세설명을 작성할 수 있습니다. '
 title: "[BUG] [제목 입력란]"
 labels: ''

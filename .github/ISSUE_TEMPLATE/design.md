@@ -1,5 +1,5 @@
 ---
-name: Design report
+name: Design
 about: 디자인 최신화 작업에 대한 상세설명을 작성할 수 있습니다.
 title: "[디자인 최신화]"
 labels: ''

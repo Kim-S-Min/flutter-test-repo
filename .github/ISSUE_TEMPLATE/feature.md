@@ -1,6 +1,6 @@
 ---
-name: Feature request
-about: '신규 기능 개발에 대한 상세 설명을 작성할 수 있습니다. '
+name: Feature
+about: '신규 기능 개발에 대한 상세설명을 작성할 수 있습니다. '
 title: "[Feature] [제목 입력란]"
 labels: ''
 assignees: ''
