@@ -1,20 +1,20 @@
 ---
 name: Feature request
-about: Suggest an idea for this project
-title: ''
+about: '신규 기능 개발에 대한 상세 설명을 작성할 수 있습니다. '
+title: "[Feature] [제목 입력란]"
 labels: ''
 assignees: ''
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+### 설명
+ex) 어떤 페이지의 어떤 기능을 가지고 있는 작업이 필요합니다...
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+### Jira Link
+- 
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+### Notion Link
+- 
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+### Figma Link
+-
